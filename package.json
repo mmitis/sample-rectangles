@@ -1,0 +1,38 @@
+{
+  "name": "sample-rectangles",
+  "version": "1.0.0",
+  "description": "Sample application to manipulate rectangles on the screen :)",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "mocha tests/**/*Spec.js --compilers js:babel-core/register --require ignore-styles",
+    "start": "webpack-dev-server",
+    "build": "webpack"
+  },
+  "author": "Marek Mitis <mitis.marek@gmail.com>",
+  "license": "-",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "chai": "^4.1.2",
+    "chai-spies": "^0.7.1",
+    "css-loader": "^0.28.7",
+    "ignore-styles": "^5.0.1",
+    "mocha": "^3.5.0",
+    "node-sass": "^4.5.3",
+    "sass-loader": "^6.0.6",
+    "webpack": "^3.5.5",
+    "webpack-dev-server": "^2.7.1"
+  },
+  "babel": {
+    "presets": [
+      "es2015",
+      "react"
+    ]
+  },
+  "dependencies": {
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1"
+  }
+}

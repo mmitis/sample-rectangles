@@ -1,0 +1,19 @@
+@import './../variables.scss';
+
+// global application styles
+body, html, #root {
+  width: 100%;
+  height: 100%;
+  -webkit-print-color-adjust: exact;
+  padding: 0;
+  margin: 0;
+  background: $page-background;
+
+}
+
+//overwritten styles for print
+@media print {
+  body, #root {
+    background: $shape-background;
+  }
+}
